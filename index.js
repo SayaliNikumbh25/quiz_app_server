@@ -18,6 +18,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/quizzes', quizRoutes);
 app.use('/api/results', resultRoutes);
 
+
 const PORT = process.env.PORT || 5000;
 app.listen(process.env.PORT, ()=>{
     mongoose.connect(process.env.MONGODB_URL)
